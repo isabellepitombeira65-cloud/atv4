@@ -1,0 +1,77 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f4f4f4;
+  --primary-color: #0066cc;
+  --button-text: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --primary-color: #3700b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#toggle-theme {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cars-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
